@@ -13,7 +13,7 @@
 <body>
 
   <h1>Privacy Policy</h1>
-  <p><strong>Effective Date:</strong> November 23, 2026<br>
+  <p><strong>Effective Date:</strong> November 23, 2026 (updated for in-app announcements)<br>
   <strong>Application:</strong> LifeFinance (Android, package <code>com.cblumhagen.lifefinance</code>)</p>
   <p>LifeFinance is a personal tracker for money, bills, meals, water, exercise and calories. It is built local-first: everything you enter stays on your phone. There are no accounts, no servers holding your data and no advertising. The only things that leave your phone are anonymous usage statistics and crash reports (which you can switch off, see section 3) and exchange-rate lookups (section 4).</p>
 
@@ -55,7 +55,9 @@
   <h2>4. Exchange Rates</h2>
   <ul>
     <li>To convert currencies, the app downloads public exchange rates from <a href="https://www.exchangerate-api.com/" target="_blank" rel="noopener">open.er-api.com</a> (ExchangeRate-API). The request contains only currency codes (for example "CNY"); as with any internet request, that service can see your IP address. No personal, financial or health data is sent.</li>
-    <li>Apart from this and section 3, the app makes no other network requests.</li>
+    <li><strong>In-app announcements:</strong> the app downloads short messages about new features (shown as a card on the Home screen) from <strong>Firebase Remote Config</strong>. This request includes a random Firebase installation ID, the app version and language, and no personal, financial or health data. It happens even when usage statistics are switched off, because it only downloads content.</li>
+    <li><strong>Ratings:</strong> after you have used the app for a while, it may ask Google Play to show its standard "rate this app" window. Your rating goes to Google Play, not to us.</li>
+    <li>Apart from these and section 3, the app makes no other network requests.</li>
   </ul>
 
   <hr>
