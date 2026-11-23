@@ -13,9 +13,9 @@
 <body>
 
   <h1>Privacy Policy</h1>
-  <p><strong>Effective Date:</strong> November 21, 2026<br>
+  <p><strong>Effective Date:</strong> November 23, 2026<br>
   <strong>Application:</strong> LifeFinance (Android, package <code>com.cblumhagen.lifefinance</code>)</p>
-  <p>LifeFinance is a personal tracker for money, bills, meals, water, exercise and calories. It is built local-first: everything you enter stays on your phone. There are no accounts, no servers holding your data, no advertising and no analytics.</p>
+  <p>LifeFinance is a personal tracker for money, bills, meals, water, exercise and calories. It is built local-first: everything you enter stays on your phone. There are no accounts, no servers holding your data and no advertising. The only things that leave your phone are anonymous usage statistics and crash reports (which you can switch off, see section 3) and exchange-rate lookups (section 4).</p>
 
   <hr>
 
@@ -23,7 +23,7 @@
   <ul>
     <li><strong>Local storage only:</strong> your profile (name/username and email, used only to label exports and pre-fill an email you choose to send), transactions, bills, pay days, categories, goals, body stats, meals, water, exercise and calories burned are stored in a private database on your device.</li>
     <li><strong>No account, no cloud sync:</strong> you do not sign in, and we do not run any server that receives or stores your personal data.</li>
-    <li><strong>No analytics, crash reporting or ads:</strong> the app contains no analytics, advertising or tracking libraries.</li>
+    <li><strong>No ads:</strong> the app contains no advertising libraries and does not read your device's advertising ID.</li>
   </ul>
 
   <hr>
@@ -33,22 +33,34 @@
   <ul>
     <li><strong>Total calories burned</strong> (shown as your daily calories burned),</li>
     <li><strong>Exercise sessions</strong> and the <strong>active calories burned</strong> during them (shown as workouts),</li>
-    <li><strong>Steps</strong> (shown as today's steps).</li>
+    <li><strong>Resting calories (basal metabolic rate)</strong> (used with active calories to work out your daily calories burned when your health app shares no daily total),</li>
+    <li><strong>Steps</strong> (shown as today's steps),</li>
+    <li><strong>Past data</strong> (older than 30 days, where your phone supports it), read once so your monthly and yearly charts are complete.</li>
   </ul>
-  <p>This data is used only to show your health totals, charts and exports inside the app. It is stored on your device, is never sent to us or anyone else, is never sold, and is never used for advertising. LifeFinance never writes to or deletes anything in Health Connect. You can remove access at any time in Health Connect's settings or with <em>Disconnect</em> in the app.</p>
+  <p>This data is used only to show your health totals, charts and exports inside the app. It is stored on your device, is never sent to us or anyone else (it is never part of usage statistics or crash reports), is never sold, and is never used for advertising. LifeFinance never writes to or deletes anything in Health Connect. You can remove access at any time in Health Connect's settings or with <em>Disconnect</em> in the app.</p>
   <p>The use of information received from Health Connect will adhere to the <a href="https://support.google.com/googleplay/android-developer/answer/12991134" target="_blank" rel="noopener">Health Connect Permissions policy</a>, including the Limited Use requirements.</p>
 
   <hr>
 
-  <h2>3. Internet Use</h2>
+  <h2>3. Anonymous Usage Statistics and Crash Reports</h2>
+  <p>To learn which features are used and to fix crashes, LifeFinance uses <strong>Google Analytics for Firebase</strong> and <strong>Firebase Crashlytics</strong> (services of Google). This is <strong>on by default and you can switch it off at any time</strong> in Settings &rarr; Privacy &rarr; <em>Share anonymous usage statistics</em>; when it is off, nothing is sent and unsent crash reports are deleted.</p>
   <ul>
-    <li><strong>Exchange rates only:</strong> to convert currencies, the app downloads public exchange rates from <a href="https://www.exchangerate-api.com/" target="_blank" rel="noopener">open.er-api.com</a> (ExchangeRate-API). The request contains only currency codes (for example "CNY"); as with any internet request, that service can see your IP address. No personal, financial or health data is sent.</li>
-    <li>The app makes no other network requests.</li>
+    <li><strong>What is sent:</strong> which screens are opened and which features are used, as fixed labels (for example "a transaction was saved, kind: expense" or "water was logged"); app settings such as app language, home currency code, theme and whether Health Connect is connected; app version, device model, Android version, country and language; and, if the app crashes, a technical crash report (where in the code it failed). Firebase also creates a random app-instance ID that is not linked to your name or email.</li>
+    <li><strong>What is never sent:</strong> amounts, balances or currency values you enter, notes, category, bill or pay-day names, your username or email, and any health information (calories, water, exercise, weight, body stats or Health Connect data).</li>
+    <li><strong>How it is used:</strong> only to understand and improve LifeFinance. It is not used for advertising, is not sold, and the advertising ID is not collected. Google processes this data under the <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase privacy terms</a>. Usage data is kept for up to 14 months; crash reports for up to 90 days.</li>
   </ul>
 
   <hr>
 
-  <h2>4. Files You Choose to Share or Import</h2>
+  <h2>4. Exchange Rates</h2>
+  <ul>
+    <li>To convert currencies, the app downloads public exchange rates from <a href="https://www.exchangerate-api.com/" target="_blank" rel="noopener">open.er-api.com</a> (ExchangeRate-API). The request contains only currency codes (for example "CNY"); as with any internet request, that service can see your IP address. No personal, financial or health data is sent.</li>
+    <li>Apart from this and section 3, the app makes no other network requests.</li>
+  </ul>
+
+  <hr>
+
+  <h2>5. Files You Choose to Share or Import</h2>
   <ul>
     <li><strong>Excel export:</strong> when you tap Export, the app creates a spreadsheet of your data on your device. It leaves your device only if you choose to share it, email it or save it somewhere, and then it goes only to the app or place you pick.</li>
     <li><strong>Spreadsheet import:</strong> when you import a spreadsheet, the app reads only the file you pick, on your device.</li>
@@ -56,32 +68,32 @@
 
   <hr>
 
-  <h2>5. Device Backup</h2>
+  <h2>6. Device Backup</h2>
   <p>If you have turned on Android's backup for your Google account, Android may include LifeFinance's data in that encrypted device backup so it can be restored on a new phone. This is controlled by you in your phone's settings (Settings &rarr; Google &rarr; Backup) and is handled by Google under the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>; we cannot access it.</p>
 
   <hr>
 
-  <h2>6. Notifications</h2>
+  <h2>7. Notifications</h2>
   <p>Optional reminders (bills, pay days, water, meals) are scheduled on your device. Nothing is sent to a server to deliver them.</p>
 
   <hr>
 
-  <h2>7. Data Retention and Deletion</h2>
-  <p>Your data stays until you delete it. You can delete everything at any time with Settings &rarr; Data &rarr; <em>Delete all data</em>, or by uninstalling the app or clearing its storage. Because we hold no copy, deletion on your device is complete.</p>
+  <h2>8. Data Retention and Deletion</h2>
+  <p>Your data stays until you delete it. You can delete everything at any time with Settings &rarr; Data &rarr; <em>Delete all data</em>, or by uninstalling the app or clearing its storage. Because we hold no copy of your entries, deletion on your device is complete. Anonymous usage statistics are not linked to you; to stop them, switch off <em>Share anonymous usage statistics</em>, and to ask for them to be deleted, email us (section 11).</p>
 
   <hr>
 
-  <h2>8. Children&rsquo;s Privacy</h2>
+  <h2>9. Children&rsquo;s Privacy</h2>
   <p>LifeFinance is not directed at children under 13 and does not knowingly collect information from them.</p>
 
   <hr>
 
-  <h2>9. Changes to This Policy</h2>
+  <h2>10. Changes to This Policy</h2>
   <p>If the app starts handling data differently, this page will be updated and the effective date changed.</p>
 
   <hr>
 
-  <h2>10. Contact</h2>
+  <h2>11. Contact</h2>
   <p>Questions about this policy: <a href="mailto:cblumd@gmail.com">cblumd@gmail.com</a></p>
 
 </body>
